@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #007cf8; /* Fondo: Gris claro */
+    color: #333; /* Texto: Gris oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #154f9b; /* Fondo: Azul intenso */
+    border-bottom: 3px solid #ffa726; /* Línea de separación: Anaranjado */
+}
+
+.navbar .navbar-brand {
+    color: #000000; /* Texto: Blanco */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ffd54f; /* Hover: Amarillo claro */
+}
+
+.navbar .nav-link {
+    color: #0151ff; /* Texto: Azul muy claro */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffa726; /* Hover: Anaranjado */
+}
+
+.navbar-toggler {
+    border-color: #ffa726; /* Borde del botón */
+}
+
+.navbar-toggler-icon {
+    background-image: linear-gradient(#e3f2fd, #ffd54f); /* Icono de menú */
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #ffa726; /* Fondo: Anaranjado */
+    border-color: #ffa726;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ff7043; /* Hover: Anaranjado más oscuro */
+    border-color: #ff7043;
+}
+
+/* Formularios */
+.form-control {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid #90caf9; /* Borde: Azul claro */
+    background-color: #ffffff; /* Fondo: Blanco */
+    color: #333; /* Texto: Gris oscuro */
+}
+
+textarea.form-control {
+    height: 100px;
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo: Blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Títulos */
+h3 {
+    color: #1a73e8; /* Azul intenso */
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffa726; /* Línea separadora */
+    padding-bottom: 5px;
+}
+
+/* Tablas */
+.table th {
+    background-color: #1a73e8; /* Cabecera: Azul intenso */
+    color: #ffffff; /* Texto: Blanco */
+    text-align: center;
+}
+
+.table td {
+    background-color: #e3f2fd; /* Celdas: Azul muy claro */
+    color: #333; /* Texto: Gris oscuro */
+    text-align: center;
+}
+
+/* Alternar colores en las filas */
+.table tr:nth-child(even) td {
+    background-color: #90caf9; /* Azul medio */
+}
+
+/* Hover en tablas */
+.table tr:hover td {
+    background-color: #ffa726; /* Anaranjado */
+    color: #ffffff; /* Texto: Blanco */
+}
+
+
+/* Responsive */
+.main-content {
+    flex: 1;
+    padding-bottom: 20px; /* Espacio para que el footer no se pegue al contenido */
+}
+
+/* Footer */
+footer {
+    background-color: #1a73e8; /* Fondo: Azul intenso */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+

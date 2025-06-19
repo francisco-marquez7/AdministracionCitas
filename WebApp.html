@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <!-- Enlaces a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" type="image/png" href="favicon.jpg">
+    <style type="text/css">
+        body {
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #0056b3;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            margin-top: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .card-text {
+            color: #555;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+    <title>Citas Médicas</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">
+                <img src="favicon.png" alt="Logo Médico"> Citas Médicas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pacientes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="alta_paciente.php">Alta de Paciente</a></li>
+                            <li><a class="dropdown-item" href="buscar_paciente.php">Buscar Paciente</a></li>
+                            <li><a class="dropdown-item" href="listado_pacientes.php">Listado de Pacientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Citas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="alta_cita.php">Alta de Cita</a></li>
+                            <li><a class="dropdown-item" href="buscar_cita.php">Buscar Cita</a></li>
+                            <li><a class="dropdown-item" href="listado_citas.php">Listado de Citas</a></li>
+                            <li><a class="dropdown-item" href="listado_citas_paciente.php">Listado Cita por Paciente</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+        <div class="card shadow mx-auto" style="max-width: 800px;">
+            <div class="card-body text-center">
+                <h3 class="card-title">Bienvenido a la aplicación de Citas Médicas</h3>
+                <p class="card-text">Seleccione una opción en el menú para comenzar.</p>
+            </div>
+        </div>
+
+    <footer>
+        <p>&copy; 2025 Citas Médicas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
